@@ -220,13 +220,13 @@ h1 {
   margin-bottom: 20px;
 }
 
-.container {
+.container-fluid {
+  width: 100%;
   background-color: black;
   color: white;
-  border-radius: 20px;
   box-shadow: 0 5px 10px 0 rgb(0,0,0,0.25);
-  /* margin: 20px 0; */
-}
+/*   margin: 20px 0;
+ */}
 
 .question {
   font-size: 1.2rem;
@@ -797,6 +797,7 @@ section {
   font-size: 52px;
   text-transform: uppercase;
   line-height: 0;
+  
 }
 
 .section-title p {
@@ -1794,24 +1795,11 @@ section {
 }
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-.card {
+.cardi {
   position: relative;
   width: 190px;
   height: 254px;
-  background-color: #000;
+  background-color: #ffffff;
   display: flex;
   flex-direction: column;
   justify-content: end;
@@ -1822,30 +1810,29 @@ section {
   color: white;
 }
 
-.card::before {
-  content: '';
-  position: absolute;
-  inset: 0;
-  left: -5px;
-  margin: auto;
-  width: 200px;
-  height: 264px;
-  border-radius: 10px;
-  background: linear-gradient(-45deg, #e81cff 0%, #40c9ff 100% );
-  z-index: -10;
-  pointer-events: none;
-  transition: all 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275);
-}
+  /* .card::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    left: -5px;
+    margin: auto;
+    width: 200px;
+    height: 264px;
+    border-radius: 10px;
+    background: linear-gradient(-45deg, #e81cff 0%, #40c9ff 100% );
+    z-index: -10;
+    pointer-events: none;
+    transition: all 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  }
 
-.card::after {
-  content: "";
-  z-index: -1;
-  position: absolute;
-  inset: 0;
-  background: linear-gradient(-45deg, #fc00ff 0%, #00dbde 100% );
-  transform: translate3d(0, 0, 0) scale(0.95);
-  filter: blur(20px);
-}
+  .card::after {
+    content: "";
+    z-index: -1;
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(-45deg, #fc00ff 0%, #00dbde 100% );
+    transform: translate3d(0, 0, 0) scale(0.95);
+  } */
 
 .heading {
   font-size: 20px;
@@ -1862,111 +1849,24 @@ section {
   font-weight: 600;
 }
 
-.card:hover::after {
-  filter: blur(30px);
-}
 
 .card:hover::before {
   transform: rotate(-90deg) scaleX(1.34) scaleY(0.77);
 }
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+/* judges section additional classes */
+.judgesHeading{
+    top: 30px;
+    margin-bottom: 40px;
+    color: #f4f4f4;
+    left: 0;
+    right: 0;
+    font-weight: 700;
+    font-size: 52px;
+    text-transform: uppercase;
+    line-height: 0;
+}
 
 
 
@@ -1986,38 +1886,6 @@ section {
   z-index: 2;
   position: relative;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -2178,3 +2046,5 @@ border-radius:100%;
     .icon-container svg {
       margin-right: 10px; /* Adjust the margin as needed */
     }
+
+/* SPONSORS SECTION */
